@@ -1,3 +1,5 @@
+import globalStyles from './globalStyles';
+
 const defaultTheme = {
   dark: false,
   font: {
@@ -13,5 +15,6 @@ const defaultTheme = {
     border: '#E5E5E5',
     notification: '#ea728c',
   },
+  ...globalStyles,
 };
 export default defaultTheme;

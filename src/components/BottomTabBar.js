@@ -11,7 +11,9 @@ import {
 import BottomTab from '../assets/images/BottomStack.svg';
 import BottomCircle from '../assets/images/BottomCircle.svg';
 
-const fullWidth = Dimensions.get('window').width;
+import {fullWidth} from '../util';
+
+// const fullWidth = Dimensions.get('window').width;
 const widthpart = fullWidth / 3;
 
 // const animPosition = new Animated.Value(widthpart);
