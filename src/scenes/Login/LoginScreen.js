@@ -9,6 +9,7 @@ import {
 import Back from '../../assets/images/Login.svg';
 import Illustrator from '../../assets/images/Login_illustrator.svg';
 import NeoCont from '../../components/NeoContainer';
+import globalStyles from '../../styles/globalStyles';
 import Theme from '../../styles/theme';
 
 const {colors, font} = Theme;
@@ -41,11 +42,13 @@ const LoginScreen = (props) => {
           height: '40%',
         }}>
         <NeoCont>
-          <TextInput style={styles.input} placeholder="Username"></TextInput>
+          <TextInput
+            style={globalStyles.input}
+            placeholder="Username"></TextInput>
         </NeoCont>
         <NeoCont>
           <TextInput
-            style={styles.input}
+            style={globalStyles.input}
             placeholder="Passsword"
             textContentType="password"></TextInput>
         </NeoCont>
@@ -84,12 +87,10 @@ const styles = StyleSheet.create({
     fontFamily: font.bold,
     fontWeight: 'bold',
   },
-  input: {
-    width: 240,
-    fontFamily: font.regular,
-    // marginBottom: 0,
-    // color: '#ea728cd',
-  },
+  // input: {
+  //   width: 240,
+  //   fontFamily: font.regular,
+  // },
   loginButton: {
     fontFamily: font.regular,
     fontSize: 24,

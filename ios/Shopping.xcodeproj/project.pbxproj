@@ -25,6 +25,7 @@
 		DD0A99597B1AE5403798AF56 /* libPods-Shopping.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDE24B7A01C31270ED8C3AC /* libPods-Shopping.a */; };
 		E7B76F549EF588F1D6EACBD9 /* libPods-Shopping-ShoppingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B014CC84B880B3518D60C3 /* libPods-Shopping-ShoppingTests.a */; };
 		FC95C5BA702D40CE8F11BBA5 /* BalooThambi2-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94098A94F02A41CE91387DCD /* BalooThambi2-ExtraBold.ttf */; };
+		639261CBE758447DB1650472 /* Akronim-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69DE3C9F45334900BCC3309E /* Akronim-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F2312A9424A9A65DC4AC4354 /* Pods-Shopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shopping.debug.xcconfig"; path = "Target Support Files/Pods-Shopping/Pods-Shopping.debug.xcconfig"; sourceTree = "<group>"; };
+		69DE3C9F45334900BCC3309E /* Akronim-Regular.ttf */ = {isa = PBXFileReference; name = "Akronim-Regular.ttf"; path = "../src/assets/fonts/Akronim-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				94098A94F02A41CE91387DCD /* BalooThambi2-ExtraBold.ttf */,
 				51C908C6B9844D13AA6A8BA8 /* BalooThambi2-Medium.ttf */,
 				C46071CB0E1F4D9E90545AA2 /* BalooThambi2-SemiBold.ttf */,
+				69DE3C9F45334900BCC3309E /* Akronim-Regular.ttf */,
 			);
 			name = Resources;
 			path = "";
@@ -370,6 +373,7 @@
 				FC95C5BA702D40CE8F11BBA5 /* BalooThambi2-ExtraBold.ttf in Resources */,
 				291AC4C36D6C424AA139F30C /* BalooThambi2-Medium.ttf in Resources */,
 				45B0E650662B4ADFAC7A7C1E /* BalooThambi2-SemiBold.ttf in Resources */,
+				639261CBE758447DB1650472 /* Akronim-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

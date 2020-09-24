@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {View, StyleSheet} from 'react-native';
-const NeoCont = ({children, width, height, borderRadius}) => {
+const NeoCont = ({children, width, height, borderRadius, containerStyle}) => {
   return (
     <View style={styles.outerShadow}>
       <View styles={styles.innerShadow}>
@@ -12,6 +12,7 @@ const NeoCont = ({children, width, height, borderRadius}) => {
             width: width,
             height: height,
             borderRadius: borderRadius || 5,
+            ...containerStyle,
           }}>
           {children}
         </View>
@@ -28,7 +29,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 1,
     shadowRadius: 5,
     shadowColor: '#ffffff',
-    margin: 10,
   },
   innerShadow: {
     shadowOffset: {
@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     backgroundColor: '#F0F0F3',
     // borderRadius: 40,
+    margin: 10,
   },
 });
 export default NeoCont;

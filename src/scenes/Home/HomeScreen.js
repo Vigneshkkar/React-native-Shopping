@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Text, View, StyleSheet, TextInput, FlatList, Modal} from 'react-native';
 import Theme from '../../styles/theme';
+import globalStyles from '../../styles/globalStyles';
 import NeoCont from '../../components/NeoContainer';
 import Search from '../../assets/images/Search.svg';
 import ProductCard from './Products';
@@ -13,8 +14,8 @@ const Home = ({data}) => {
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   return (
-    <View style={Styles.container}>
-      <Text style={Styles.title}>Home</Text>
+    <View style={globalStyles.container}>
+      <Text style={globalStyles.title}>Home</Text>
       <NeoCont>
         <View style={Styles.searchCont}>
           <Search style={Styles.searchIcon}></Search>
@@ -23,7 +24,7 @@ const Home = ({data}) => {
       </NeoCont>
 
       <FlatList
-        style={{marginBottom: 205, paddingTop: 5}}
+        style={{marginBottom: 105, paddingTop: 5}}
         data={data}
         columnWrapperStyle={{
           justifyContent: 'space-around',
@@ -50,12 +51,6 @@ const Home = ({data}) => {
 };
 
 const Styles = StyleSheet.create({
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    // flex: 1,
-    marginHorizontal: 15,
-  },
   cardLayout: {
     // display: 'flex',
     // flex: 2,
@@ -71,11 +66,6 @@ const Styles = StyleSheet.create({
   },
   searchBar: {
     fontFamily: font.regular,
-  },
-  title: {
-    fontFamily: font.bold,
-    fontSize: 36,
-    color: colors.primary,
   },
 });
 
